@@ -1,0 +1,12 @@
+#!/bin/sh
+
+
+install() {
+    tar xzvf blockupdate.tar.gz -C /
+    /etc/blockupdate/firewall.sh start
+}
+
+uninstall() {
+    /etc/blockupdate/firewall.sh stop
+    rm -rf /etc/blockupdate/ /etc/firewall.d/99-blockupdate.sh
+}

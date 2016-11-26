@@ -1,0 +1,3 @@
+/etc/blockupdate/firewall.sh
+/etc/blockupdate/domainlist
+/etc/firewall.d/99-blockupdate.sh
